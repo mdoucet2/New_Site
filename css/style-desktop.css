@@ -169,141 +169,68 @@
 /* Nav                                                                           */
 /*********************************************************************************/
 
-	#nav
-	{
-		position: absolute;
-		right: 0;
-		top: 0;
-		font-size: 0.9em;
-	}
-	
-		#nav ul
-		{
-		}
-			
-			#nav ul li
-			{
-				float: left;
-				line-height: 4.5em;
-				padding-left: 1.5em;
-			}
+* {
+ box-sizing: border-box;
+}
 
-				#nav ul li a,
-				#nav ul li span
-				{
-					font-weight: 800;
-					letter-spacing: 0.025em;
-					color: #696969;
-					text-decoration: none;
-					border-radius: 6px;
-					padding: 0.5em 1em 0.5em 1em;
-					-moz-transition: background-color .25s ease-in-out;
-					-webkit-transition: background-color .25s ease-in-out;
-					-o-transition: background-color .25s ease-in-out;
-					-ms-transition: background-color .25s ease-in-out;
-					transition: background-color .25s ease-in-out;
-				}
-				
-				#nav ul li > ul
-				{
-					display: none;
-				}
+body {
+ font-family: "PT Sans Narrow", sans-serif;
+}
 
-			#nav ul li:hover
-			{
-			}
+nav {
+ background: rgba(233,233,233, 0.8);
+ margin: 3em 2rem;
+ margin-top: -74px;
+ margin-bottom: 50px;
+}
 
-				#nav ul li:hover a,
-				#nav ul li:hover span
-				{
-					background: #fff;
-				}
+nav ul {
+ list-style: none;
+ float: right;
+}
 
-			#nav ul li.active
-			{
-			}
+nav ul li {
+ display: inline-block;
+ text-transform: uppercase;
+ font-size: 1.5rem;
+ letter-spacing: 0.05rem;
+}
 
-				#nav ul li.active a,
-				#nav ul li.active span
-				{
-					background: #fff;
-				}
+nav ul li a {
+ display: inline-block;
+ padding: 1rem;
+ color: #000;
+ text-decoration: none;
+ transition: transform 0.3s ease 0s;
+ transform-origin: 50% 0px 0px;
+ transform-style: preserve-3d;
+}
 
-			#nav ul li.current
-			{
-			}
+nav ul li a.current {
+ color: #7AB1C1 ;
+}
 
-				#nav ul li.current a
-				{
-					background: #444;
-					color: #fff;
-				}
-				
-	.dropotron
-	{
-		background: #fff;
-		letter-spacing: 0.025em;
-		color: #696969;
-		text-decoration: none;
-		border-radius: 6px;
-		padding: 0.75em 0;
-		min-width: 15em;
-		box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1), 0 0.25em 0.25em 0.1em rgba(0,0,0,0.025);
-		margin-top: calc(-0.75em + 1px);
-		margin-left: -1px;
-	}
+nav ul li a:hover {
+ background: rgba(233,233,233, 0.8);
+ color: #000;
+ transform: rotateX(90deg) translateY(-22px);
+}
 
-		.dropotron li
-		{
-			border-top: solid 1px #eee;
-			line-height: 3em;
-		}
-
-			.dropotron li:first-child
-			{
-				border-top: 0;
-			}
-	
-			.dropotron li > a,
-			.dropotron li > span
-			{
-				text-decoration: none;
-				color: inherit;
-				display: block;
-				padding: 0 1.5em;
-				-moz-transition: color .25s ease-in-out, background-color .25s ease-in-out;
-				-webkit-transition: color .25s ease-in-out, background-color .25s ease-in-out;
-				-o-transition: color .25s ease-in-out, background-color .25s ease-in-out;
-				-ms-transition: color .25s ease-in-out, background-color .25s ease-in-out;
-				transition: color .25s ease-in-out, background-color .25s ease-in-out;
-			}
-
-				.dropotron li > a:hover,
-				.dropotron li > span:hover,
-				.dropotron li.active > a,
-				.dropotron li.active > span
-				{
-					background: #eee;
-				}
-	
-		.dropotron.level-0
-		{
-			font-size: 0.8em;
-			margin-left: 1.5em;
-			margin-top: 0;
-		}
-		
-			.dropotron.level-0:before
-			{
-				content: '';
-				position: absolute;
-				top: -0.5em;
-				left: 1em;
-				border-bottom: solid 0.75em #ffffff;
-				border-left: solid 0.75em transparent;
-				border-right: solid 0.75em transparent;
-				z-index: 1;
-			}
+nav ul li a::before {
+ position: absolute;
+ top: 100%;
+ left: 0px;
+ width: 100%;
+ padding: 4px 0px;
+ text-align: center;
+ line-height: 50px;
+ background: none repeat scroll 0% 0% #7AB1C1 ;
+ color: #FFF;
+ content: attr(data-hover);
+ transition: #6363CE  0.3s ease 0s;
+ transform: rotateX(-90deg);
+ transform-origin: 50% 0px 0px;
+}
 
 /*********************************************************************************/
 /* Banner                                                                        */
