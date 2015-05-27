@@ -520,7 +520,7 @@ body {
 }
 
 .social {
-  position: absolute;
+  position: left;
   width: 100%;
   top: 50%;
   text-align: center;
