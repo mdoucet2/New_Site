@@ -781,10 +781,11 @@ pre code {
 }
 
 .container {
-  padding-right: 15px;
+    padding-right: 15px;
   padding-left: 15px;
-  margin-right: auto;
+  margin-right: 39px;
   margin-left: auto;
+
 }
 
 .container:before,
@@ -1269,7 +1270,7 @@ pre code {
     margin-left: 16.666666666666664%;
   }
   .col-sm-offset-1 {
-    margin-left: 8.333333333333332%;
+   margin-left: 10%;
   }
   .col-sm-offset-0 {
     margin-left: 0;
@@ -1318,7 +1319,7 @@ pre code {
     width: 41.66666666666667%;
   }
   .col-md-4 {
-    width: 33.33333333333333%;
+    width: 33%;
   }
   .col-md-3 {
     width: 25%;
